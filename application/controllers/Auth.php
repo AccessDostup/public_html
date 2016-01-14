@@ -21,6 +21,7 @@ class Auth extends CI_Controller {
 	public function index()
 	{
 		$data['Title'] = "Авторизация";
-		$this->load->view('Auth', $data);
+		$data['page'] = "auth";
+		$this->load->view('main', $data);
 	}
 }
